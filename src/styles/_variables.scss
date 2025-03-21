@@ -1,5 +1,10 @@
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 1024px;
+
 $white: #FFFFFF;
 $white-95: #F1F1F3;
+$white-97:#F7F7F8;
+$white-99:#FCFCFD;
 $primary-color:#A9360A;
 $secondry-color:#FCB730;
 $orange-50:#FF9500;
@@ -8,28 +13,34 @@ $grey:#9FA0A0;
 $grey-15:#262626;
 $grey-30: #4C4C4D;
 $grey-35:#59595A;
-$blck:#333;
+$blck:#333333;
 $black-secondry:#191919;
+$sky-blue:#3498db;
 
 // Define the color groups for background and text colors
 $background-colors: (
   "white": $white,
   "white-95": $white-95,
+  "white-97":$white-97,
+  "white-99":$white-99,
   "primary": $primary-color,
-  "secondary": $secondry-color,
+  "secondary-color": $secondry-color,
   "orange": $orange-50,
   "grey": $grey,
   "grey-15": $grey-15,
   "grey-30": $grey-30,
   "grey-35": $grey-35,
   "black": $blck,
-  "black-secondary": $black-secondry
+  "black-secondary": $black-secondry,
 );
 
 $font-colors: (
   "white": $white,
+  "white-95": $white-95,
+  "white-99":$white-99,
   "primary": $primary-color,
-  "secondary": $secondry-color,
+  "white-97":$white-97,
+  "secondary-color": $secondry-color,
   "orange": $orange-50,
   "grey": $grey,
   "grey-15": $grey-15,

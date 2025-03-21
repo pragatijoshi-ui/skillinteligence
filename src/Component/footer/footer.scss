@@ -1,0 +1,48 @@
+@import '../../App.scss';
+
+.footer {
+    & .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include respond-to(mobile) {
+            display: block;
+        }
+        & .footer-links{
+            & .footer-links-ul{
+                padding-left: 0px;
+                @include respond-to(mobile) {
+                    margin-bottom: pxToRem(24);
+                }
+                li{
+                    a{
+                        &:hover{
+                            color: $orange-50;
+                        }
+                    }
+                }
+            }
+        }
+        & .footer-social {
+            & .footer-social-ul{
+                padding-left: 0;
+                display: flex;
+                justify-content: space-around;
+                gap: pxToRem(8);
+                li{
+                    background-color:$white-97;
+                    border: 1px solid $white-95;
+                    border-radius: pxToRem(8);
+                }
+            }
+        }
+    }
+
+    & .footer-bottom {
+        text-align: center;
+        border-top: 1px solid $white-95;
+        background-color: $white-95;
+    }
+
+   
+}

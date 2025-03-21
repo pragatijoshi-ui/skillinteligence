@@ -1,4 +1,4 @@
-@import './variables';
+// @import './variables';
 
 @function pxToRem($px, $base: 16) {
     @return #{$px / $base}rem;
@@ -15,7 +15,7 @@ $font-sizes: 8,12, 14, 16, 18, 20, 24, 32,;  // You can add or remove values as 
 }
 
 // Define the range of padding and margin values you want
-$spacing-values: 4, 8,10, 12, 16, 20, 24, 32,36, 40,44, 48, 56;
+$spacing-values:0,4, 8,10,12,14, 16, 20, 24, 32,36, 40,44, 48, 56,62,68,72,78;
 
 // Generate padding classes (padding-top, padding-right, padding-bottom, padding-left)
 @each $value in $spacing-values {
