@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../../App.scss'
+// import '../../App.scss'
 import './accordion.scss'
 
 const Accordion = () => {
@@ -27,7 +27,9 @@ const Accordion = () => {
                                 </div>
                                 {activeIndex === index && (
                                     <div className="accordion-body p-10">
-                                        <p className='be-vietnam-pro-regular font-16 mb-0'>This is the content for Accordion Item {index + 1}.</p>
+                                        <p className='be-vietnam-pro-regular font-16 mb-48 text-grey-30'>This is the content for Accordion Item {index + 1}.</p>
+                                        <div className='accordion-body-link bg-white-95 p-24'><a href="#" className='font-16 be-vietnam-pro-medium text-black text-decoration-none'>This is the content for Accordion Item </a>
+                                        </div>
                                     </div>
                                 )}
                             </div>

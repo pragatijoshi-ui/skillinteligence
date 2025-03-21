@@ -1,0 +1,17 @@
+.aboutus-main-div{
+    & .aboutUs-bg-image{
+        height: 400px;
+        width: 400px;
+        background-image: url('../../images/aboutus.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    & .image-overlape-text{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 170px;
+        left: 150px;
+    }
+}

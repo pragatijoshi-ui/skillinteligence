@@ -7,12 +7,7 @@
         border-radius: pxToRem(4);
         & .accordion-header {
             cursor: pointer;
-
-            &:hover {
-                // background-color: #f0f0f0;
-            }
-
-            .icon {
+            & .icon {
                 font-size: pxToRem(20);
                 margin-left: pxToRem(10);
                 background-color: $orange-95;

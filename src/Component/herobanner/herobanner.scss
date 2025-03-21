@@ -1,0 +1,41 @@
+@import '../../App.scss';
+.Herobanner-main-div{
+    background-image: url('../../images/heroimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    & .content{
+        & h1,p{
+            color: $white;
+        }
+    }
+}
+.herobanner-card-position{
+    & .card-position{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: pxToRem(-200);
+        width: 100%;
+        @include respond-to(mobile) {
+            position: relative;
+            top: 0;
+            display: grid;
+            grid-template-columns: auto;
+            margin-top: pxToRem(40);
+        }
+        & .card{
+            text-align: left;
+            min-height: pxToRem(200);
+            width: pxToRem(270);
+            & .image-div{
+                margin: 0;
+                padding: pxToRem(16);
+            }
+        }
+    }
+}
