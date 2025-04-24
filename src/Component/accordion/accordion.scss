@@ -1,17 +1,58 @@
 @import '../../App.scss';
-.accordion {
-    width: 100%;
-    margin: 0 auto;
-    & .accordion-item {
-        border: 1px solid #F1F1F3;
-        border-radius: pxToRem(4);
-        & .accordion-header {
-            cursor: pointer;
-            & .icon {
-                font-size: pxToRem(20);
-                margin-left: pxToRem(10);
-                background-color: $orange-95;
-                padding: 2px 10px;
+
+.section-accordion {
+    // height: 518px;
+    & .faq-image-div{
+
+    }
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 30px;
+        
+        .accordion-item {
+            border: 1px solid $light-color;
+            border-radius: pxToRem(20);
+            box-shadow: 4px 4px 20px 0px #00000040;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 40px;
+            color: rgba(103, 82, 98, 0.5);
+            position: relative;
+            // Common header styles
+            .accordion-header {
+                cursor: pointer;
+
+                .icon {
+                    font-size: pxToRem(20);
+                    margin-left: pxToRem(10);
+                    background-color: $secondry-color;
+                    padding: 2px 10px;
+                }
+            }
+
+            // Odd items (1st, 3rd, etc.) - rotate +30deg
+            &:nth-child(odd) {
+                transform: rotate(-3deg);
+                z-index: 1;
+            }
+
+            // Even items (2nd, 4th, etc.) - rotate -30deg
+            &:nth-child(even) {
+                transform: rotate(10deg);
+                margin-left: 50px;
+            }
+            &:nth-child(3) {
+                margin-left: -30px;
+            }
+            &:nth-child(2) {
+                z-index: 3;
+            }
+            &:nth-child(4){
+                z-index: 0;
+            }
+            &.active {
+                transform: rotate(0deg);
+                z-index: 1; // bring it to front if needed
             }
         }
     }

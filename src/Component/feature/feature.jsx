@@ -1,101 +1,59 @@
-import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Card from '../servicecard/singlecard';
-import '../servicecard/servicecard.scss';
+import React from 'react';
+import './feature.scss'; 
+import Feature1 from '../../images/feature-icon1.svg';
+import Feature2 from '../../images/feature-icon2.svg';
+import Feature3 from '../../images/feature-icon3.svg';
+import Feature4 from '../../images/feature-icon4.svg';
+import Feature5 from '../../images/feature-icon5.svg';
+import Feature6 from '../../images/feature-icon6.svg';
 
-import './feature.scss';
-import Feature1 from '../../images/feature1.png';
-import Feature2 from '../../images/feature2.png';
-import Feature3 from '../../images/feature3.png';
-import Feature4 from '../../images/feature4.png';
-import Feature5 from '../../images/feature5.png';
-import Feature6 from '../../images/feature6.png';
-function MultipleItemsSlider() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-            },
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-            },
-          },
-        ],
-      };
-      
-    return (
-        <>
-            <section className="section-aboutUs w-100 margin-medium-T-B">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-11 col-md-12">
-                            <div className="slider-container">
-                                <Slider {...settings}>
-                                    <Card
-                                        title="Synergy of expertise"
-                                        description="This is the card description."
-                                        imageUrl={Feature1}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-                                    <Card
-                                        title="Innovation- driven Approach"
-                                        description="This is the card description."
-                                        imageUrl={Feature2}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-
-                                    <Card
-                                        title="Practical, hands-on education"
-                                        description="This is the card description."
-                                        imageUrl={Feature3}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-                                    <Card
-                                        title="Comprehensive IT solutions"
-                                        description="This is the card description."
-                                        imageUrl={Feature4}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-                                    <Card
-                                        title="Unified Brand identity and Vision"
-                                        description="This is the card description."
-                                        imageUrl={Feature5}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-                                    <Card
-                                        title="Robust trading infrastructure"
-                                        description="This is the card description."
-                                        imageUrl={Feature6}
-                                        showDescription={false}
-                                        showLink={false}
-                                    />
-                                </Slider>
-                            </div>
+const Feature = () => {
+  return (   
+    <>    
+    <section className='Feature-section section-medium-padding-T-B'>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12 col-md-6'>
+                    <div className='d-grid feature-inner-div'>
+                        <div data-aos="fade-down-right" className='trading-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature1} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'>Robust trading infrastructure</p>
+                        </div>
+                        <div data-aos="zoom-in-down" className='blank-square-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'></div>
+                        <div data-aos="zoom-in-down" className='education-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature2} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'> Practical, hands-on education</p>
+                        </div>
+                        <div data-aos="fade-down-left" className='Innovation-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature3} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'>Innovation- driven Approach</p>
+                        </div>
+                        <div data-aos="fade-up-right" className='experties-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature4} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'>Synergy of expertise</p>
+                        </div>
+                        <div data-aos="zoom-in-up" className='brand-identity-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature5} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'>Unified Brand identity and Vision</p>
+                        </div>
+                        <div data-aos="zoom-in-up" className='blank-circle-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'></div>
+                        <div data-aos="fade-up-left" className='Comprehensive-section feature-section-bg d-flex flex-column justify-content-center align-items-center text-center'>
+                            <img className='mb-12' src={Feature6} alt="" />
+                            <p className='font-18 text-black be-vietnam-pro-semibold'>Comprehensive IT solutions</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </>
-    );
-}
+                <div className='col-12 col-md-6'>
+                    <div className='d-grid feature-inner-div'>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </>
+  );
+};
 
-export default MultipleItemsSlider;
+export default Feature;

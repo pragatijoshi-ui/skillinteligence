@@ -1,0 +1,125 @@
+@import '../../App.scss';
+
+.section-ourclients {
+  background-image: url('../../images/slider-bg.png');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 742px;
+  padding: 60px 0px;
+
+  & .left-slider-container {
+    & .slick-slider {
+      
+      & .slick-list {
+        & .slick-track {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+  height: 100%;
+
+          // gap: 30px;
+          & .slick-slide {
+            & .slider-inner-div {
+              &::after {
+                content: '';
+                position: absolute;
+                height: 110px;
+                width: 10px;
+                background-color: $light-color;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                right: 30%;
+              }
+            }
+
+            & .my-slick-current {
+              margin-left: 20%;
+              transition: all 0.3s ease;
+
+              &::after {
+                background-color: $dark-color;
+                right: 55px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  & .right-slider-container {
+    display: flex;
+    justify-content: flex-end;
+    & .slick-slider {
+      width: auto;
+      max-width: 100%;
+      & .slick-list {
+        & .slick-track {
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: center;
+          // gap: 30px;
+          & .slick-slide {
+            & .slider-inner-div {
+              &::after {
+                content: '';
+                position: absolute;
+                height: 110px;
+                width: 10px;
+                background-color: $light-color;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                left: 30%;
+              }
+
+              &:not(.my-slick-current) {
+                margin-left: 30%;
+
+                &::after {
+                  left: 30%;
+
+                }
+              }
+            }
+
+            & .my-slick-current {
+              transition: all 0.3s ease;
+              margin-left: 10%;
+              &::after {
+                background-color: $dark-color;
+                left: 10%;
+              margin-left: 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .slick-slide {
+    height: auto; // Ensure each slide's height adjusts according to content
+    width: 100%;
+  }
+  & .slick-track{
+  }
+  & .slider-inner-div {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+    height: 110px; 
+    width: 70%!important;
+    & .client-img-div {
+      height: 80.33px;
+      width: 80.33px;
+      background-color: $light-color;
+      border-radius: 50%;
+    }
+  }  
+  
+}

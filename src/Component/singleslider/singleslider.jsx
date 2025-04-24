@@ -26,7 +26,7 @@ export default function SimpleSlider() {
                                         <img src="" alt="client Image" className="client-image mr-16" />
                                         <div className="client-detail">
                                             <p className="client-name text-white font-18 be-vietnam-pro-medium mb-8">John Doe</p>
-                                            <p className="client-designation font-16 text-white-95 be-vietnam-pro-regular mb-0">Project Manager</p>
+                                            <p className="client-designation font-16 be-vietnam-pro-regular mb-0">Project Manager</p>
                                         </div>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ export default function SimpleSlider() {
                                         <img src="" alt="client Image" className="client-image mr-16" />
                                         <div className="client-detail">
                                             <p className="client-name text-white font-18 be-vietnam-pro-medium mb-8">John Doe</p>
-                                            <p className="client-designation font-16 text-white-95 be-vietnam-pro-regular mb-0">Project Manager</p>
+                                            <p className="client-designation font-16 be-vietnam-pro-regular mb-0">Project Manager</p>
                                         </div>
                                     </div>
                                 </div>
@@ -58,7 +58,7 @@ export default function SimpleSlider() {
                                         <img src="" alt="client Image" className="client-image mr-16" />
                                         <div className="client-detail">
                                             <p className="client-name text-white font-18 be-vietnam-pro-medium mb-8">John Doe</p>
-                                            <p className="client-designation font-16 text-white-95 be-vietnam-pro-regular mb-0">Project Manager</p>
+                                            <p className="client-designation font-16 be-vietnam-pro-regular mb-0">Project Manager</p>
                                         </div>
                                     </div>
                                 </div>

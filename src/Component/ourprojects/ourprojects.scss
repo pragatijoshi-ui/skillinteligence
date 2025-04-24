@@ -1,0 +1,11 @@
+@import '../../App.scss';
+.section-ourprojects{
+    & .project-image-div{
+        & .project-image{
+        }
+    }
+    & .project-detail-div{
+        height: 100%;
+        padding-left:48px ;
+    }
+}

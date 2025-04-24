@@ -1,45 +1,40 @@
 import React from 'react';
 import './herobanner.scss'
-import Content from '../content/content';
-import Card from '../servicecard/singlecard';
-import Feature1 from '../../images/feature1.png';
-import Feature2 from '../../images/feature2.png';
-import Feature3 from '../../images/feature3.png';
-const Herobanner = () => {
+import Heroimage from '../.././images/hero-image-new.png';
+import EllipseBM from '../../images/Ellipse-black-medi.svg';
+import EllipseBS from '../../images/Ellipse-black-small.svg';
+import EllipseLB from '../../images/Ellipse-light-big.svg';
+import EllipseDB from '../../images/Ellipse-dark-big.svg';
+import EllipseLM from '../../images/Ellipse-light-medi.svg'
+
+const Herobanner = () => {        
     return (
         <>
         <section className='mb-78 section-herobanner'>
             <div className='Herobanner-main-div section-larg-padding-T-B position-relative'>
                 <div className='container'>
-                    <div className='row justify-content-center align-items-center'>
-                        <div className='col-12 col-md-8 text-center'>
-                            <Content heading="Welcome to My Site" description="The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!."/>
+                    <div className='row align-items-center'>
+                        <div className='col-12 col-md-7'>
+                            <p data-aos="fade-up" data-aos-duration="3000" className='text-black font-20 be-vietnam-pro-regular'>Welcom To</p>
+                            <h1 data-aos="fade-up" data-aos-duration="2000" className='font-64 be-vietnam-pro-semibold text-black-secondry'>
+                                SKILL <br/>INTELLIGENCE<br/> WORLD 
+                            </h1>
+                            <p data-aos="fade-up" data-aos-duration="1000" className='font-20 be-vietnam-pro-regular text-black w-80'>Our company operates in the education and professional development sector, focusing on delivering high-quality training programs</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div className='container herobanner-card-position'>
-                <div className='row justify-content-center position-relative'>
-                    <div className='col-12 col-md-8'>
-                        <div className="card-position">
-                            <Card
-                            title="Beautiful Nature"
-                            description="Explore the marvels of modern architecture around the world."
-                            imageUrl={Feature1}
-                            showLink={false}
-                            />
-                            <Card
-                            title="Amazing Architecture"
-                            description="Explore the marvels of modern architecture around the world."
-                            imageUrl={Feature2}
-                            showLink={false}
-                            />
-                            <Card
-                            title="Amazing Architecture"
-                            description="Explore the marvels of modern architecture around the world."
-                            imageUrl={Feature3}
-                            showLink={false}
-                            />
+                        <div className='col-12 col-md-5 d-flex justify-content-end position-relative align-items-end'>
+                            <div className='top-ellipse-icons-div'>
+                                <img data-aos="fade-left" data-aos-duration="2000" className='top-EllipseDB rotate-slow delay-2' src={EllipseDB} alt="" />
+                                <img data-aos="fade-left" data-aos-duration="2000" className='top-EllipseBS rotate-slow delay-3' src={EllipseBS} alt="" />
+                                <img data-aos="fade-left" data-aos-duration="2000" className='top-EllipseLM rotate-slow delay-4' src={EllipseLM} alt="" />
+                            </div>
+                            <div className='SIW-office-image-div'>
+                                <img data-aos="zoom-in" data-aos-duration="3000" src={Heroimage} alt="Hero Banner right image" />
+                            </div>
+                            <div data-aos="zoom-in" data-aos-duration="2000" className='SIW-logo-div'></div>
+                            <div className='bottom-ellipse-icons-div'>
+                                <img data-aos="fade-left" data-aos-duration="2000" className='bottom-EllipseLB rotate-slow delay-1' src={EllipseLB} alt="" />
+                                <img data-aos="fade-left" data-aos-duration="2000" className='bottom-EllipseBM rotate-slow delay-5' src={EllipseBM} alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,0 +1,39 @@
+@import '../../App.scss';
+.section-intelligence-educator{
+    & .left-side-image-section{
+        & .image-section-nav{
+            display: grid;
+            grid-template-columns:auto auto;
+            grid-auto-rows: 175px;
+            gap: 24px;
+            & .educator-image1{
+                width: 200px;
+                grid-row: span 2;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+            & .educator-circle{
+                width: 200px;
+                border-radius: 100px;
+            }
+            & .educator-rectangle{
+                width: 200px;
+                height: 100px;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            & .educator-image2{
+                width: 200px;
+                grid-row: span 2;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+            }
+        }
+    }
+    & .right-side-content-section{
+        padding: 0px 48px;
+    }
+}
