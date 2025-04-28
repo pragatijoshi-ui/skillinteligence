@@ -3,19 +3,31 @@
     & .weoffer-card-container{
         & .card-nav{
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: 1fr 1fr 1fr;
             gap: 78px;
             & .card-list{
                 background-color: $light-color;
                 padding: 78px 36px 36px;
                 border-radius: 10px;
+                height: 160px;
                 & .weoffer-card-body{
-                    & .weoffer-icon{
+                    & .weoffer-icon-div{
+                        background-image: url('../../images/ourOffer.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: 140px;
+                        width: 174px;
                         position: absolute;
                         margin: auto;
-                        top: -75px;
+                        top: -78px;
                         left: 0;
                         right: 0;
+                        & .weoffer-icon{
+                            height: 70px;
+                            width: 70px;
+                            margin: auto;
+                        }
                     }
                 }                    
             }

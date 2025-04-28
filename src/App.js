@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './Component/Home/index';
-import Fusionintelligence from './Component/Fusion/Fusionintelligence'
+import Fusionintelligence from './Component/Fusion/Fusionintelligence';
+import Educator from './Component/Educator/Educator'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,7 +23,7 @@ function App(){
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/Fusionintelligence" element={<Fusionintelligence />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/Educator" element={<Educator />} />
         </Routes>
       </Router>
     );

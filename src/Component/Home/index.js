@@ -8,8 +8,8 @@ import Heading from '../heading/heading';
 import Feature from '../feature/feature';
 import OurClients from '../ourclients/ourclients';
 import ContactForm from '../getintouch/getintouch';
-function Index() {
 
+function Index() {
   return (
     <div>
       <Herobanner/>
@@ -24,11 +24,6 @@ function Index() {
       <Accordion/>
       <Heading heading="Get In Touch"/>
       <ContactForm/>
-      {/* <Educatorweoffers/>
-      <Technology/>
-      <WeOffer/>
-      <OurProjects/>
-      <IntelligenceEducator/> */}
       <div className="mt-40">
       <Footer/>
       </div>

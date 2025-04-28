@@ -1,5 +1,6 @@
 @import '../../App.scss';
 .section-intelligence-educator{
+    margin-top: 200px;
     & .left-side-image-section{
         & .image-section-nav{
             display: grid;
@@ -14,7 +15,7 @@
                 border-bottom-left-radius: 50px;
             }
             & .educator-circle{
-                width: 200px;
+                width: 180px;
                 border-radius: 100px;
             }
             & .educator-rectangle{
@@ -35,5 +36,6 @@
     }
     & .right-side-content-section{
         padding: 0px 48px;
+        height: 100vh;
     }
 }

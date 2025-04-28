@@ -18,11 +18,13 @@
   padding: 0px 0px 30px 80px;
   overflow-y: auto; // changed from scroll to auto (cleaner UX)
   height: 80vh;
-  
-  // Make inner container flow vertically
   display: flex;
   flex-direction: column;
+  scrollbar-width: none;
 
+  &::-webkit-scrollbar {
+    display: none;
+  }
   .right-section-inner {
     min-height: 100vh; // changed from fixed height to min-height
     display: flex;
@@ -80,4 +82,10 @@
     border: none;
     outline: none;
   }
+}
+.bento-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }

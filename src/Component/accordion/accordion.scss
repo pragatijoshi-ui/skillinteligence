@@ -1,9 +1,16 @@
 @import '../../App.scss';
 
 .section-accordion {
-    // height: 518px;
-    & .faq-image-div{
-
+    .accordion-section{
+        padding: 20px 0px;
+        height: 520px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
     .accordion {
         width: 100%;
@@ -25,8 +32,10 @@
                 .icon {
                     font-size: pxToRem(20);
                     margin-left: pxToRem(10);
-                    background-color: $secondry-color;
-                    padding: 2px 10px;
+                    padding: 2px 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
             }
 

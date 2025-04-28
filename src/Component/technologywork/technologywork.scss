@@ -73,7 +73,7 @@
     height: 4rem;
 }
 
-.icon-block svg {
+.icon-block img {
     margin: 0px auto;
     width: 86%;
     animation: Rotate-reverse 20s linear infinite;
@@ -200,17 +200,17 @@
     opacity: 0.2;
 }
 
-.circle .icon-block svg {
+.circle .icon-block img {
     animation: img-rotate 20s linear infinite;
     -webkit-animation: img-rotate 20s linear infinite;
 }
 
-.circle svg:hover {
+.circle img:hover {
     width: 100%;
     height: 100%;
 }
 
-.icon-block svg:hover {
+.icon-block img:hover {
     width: 100%;
     height: 100%;
 }
