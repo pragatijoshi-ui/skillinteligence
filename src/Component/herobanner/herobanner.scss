@@ -1,0 +1,84 @@
+@import '../../App.scss';
+.Herobanner-main-div{
+    height: 100vh;
+    width: 100%;
+    & .top-ellipse-icons-div{
+        & .top-EllipseDB{
+            position: absolute;
+            right: 44px;
+            top: 0;
+            z-index: 0;
+            height: 80px;
+            width: 80px;
+        }
+        & .top-EllipseBS{
+            position: absolute;
+            right: 18px;
+            top: 58px;
+        }
+        & .top-EllipseLM{
+            position: absolute;
+            right: 26px;
+            top: 72px;
+        }
+    }
+    & .bottom-ellipse-icons-div{
+        & .bottom-EllipseLB{
+            position: absolute;
+            left:-64px;
+            bottom: 174px;
+            height: 80px;
+            width: 80px;
+        }
+        & .bottom-EllipseBM{
+            position: absolute;
+            left:-80px;
+            bottom: 140px;
+        }
+    }
+    & .SIW-office-image-div{
+        z-index: 1;
+        padding: 0px 20px;
+        img{
+            height: 100%;
+            width: 100%;
+        
+        }
+    }
+    & .SIW-logo-div{
+        background-color: $primary-color;
+        height: 177px;
+        width: 177px;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 16px;
+        left: -48px;
+        z-index: 1;
+    }
+}
+.herobanner-card-position{
+    & .card-position{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: pxToRem(-200);
+        width: 100%;
+        @include respond-to(mobile) {
+            position: relative;
+            top: 0;
+            display: grid;
+            grid-template-columns: auto;
+            margin-top: pxToRem(40);
+        }
+        & .card{
+            text-align: left;
+            min-height: pxToRem(200);
+            width: pxToRem(270);
+            & .image-div{
+                margin: 0;
+                padding: pxToRem(16);
+            }
+        }
+    }
+}

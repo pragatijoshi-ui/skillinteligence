@@ -1,0 +1,29 @@
+@import '../../App.scss';
+
+.footer {
+    box-shadow: 0px -4px 20px 0px #00000040;
+    & .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include respond-to(mobile) {
+            display: block;
+        }
+        
+    }
+    & .footer-social {
+        & .footer-social-ul{
+            padding-left: 0;
+            display: flex;
+            justify-content: space-around;
+            gap: pxToRem(8);
+           
+        }
+    }
+    & .footer-bottom {
+        text-align: center;
+        border-top: 1px solid $light-color;
+    }
+
+   
+}

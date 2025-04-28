@@ -1,0 +1,40 @@
+@import '../../App.scss';
+
+.section-getIntouch{
+    background-color: $light-color;
+    box-shadow: 4px 4px 20px 0px #00000040;
+    padding: 12px 12px;
+    border-radius: 20px;
+    & .contact-detail-div{
+        background-color: $secondry-color;
+        border-radius: 16px;
+        box-shadow: 4px 4px 20px 0px #00000033;
+        padding: 42px 16px;       
+    }
+    & .input-getintouch{
+        width: 100%;
+        outline: 0;
+        border-width: 0 0 2px;
+        border-color: $dark-secondary;
+        border-bottom: 1px solid $dark-secondary;
+        height: 48px;
+        background: transparent;
+    }
+    & .textrea-getintouch{
+        border:none;
+        border-bottom: 1px solid $dark-secondary;
+        background: transparent;
+        height: 65px;
+        resize: none;
+        &:focus{
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $dark-secondary;
+        }
+    }
+    & .submit-btn{
+         padding: 8px 20px;
+         background-color: $secondry-color;
+         border-radius: 50px;
+    }
+}

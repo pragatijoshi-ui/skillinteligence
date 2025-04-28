@@ -1,5 +1,15 @@
-@use 'path/to/mixins';  // Import the mixins file
+@import './mixins';
 
+body {
+  margin: 0;
+  background-color: $white-secondry;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
 // Thin
 .be-vietnam-pro-thin {
   @include font-variation(100, normal);
@@ -46,41 +56,43 @@
 }
 
 .heading-h1{
-    font-size: pxToRem(72px);
+    font-size: pxToRem(72);
     line-height: 150%;
     @include font-variation(600, normal);
-    color: $grey-15;
 }
 .heading-h2{
-    font-size: pxToRem(60px);
+    font-size: pxToRem(60);
 }
 .heading-h3{
-    font-size: functiopxToRem(52px);
+    font-size: functiopxToRem(52);
 }
 .heading-h4{
-    font-size: functiopxToRem(48px);
+    font-size: functiopxToRem(48);
 }
 .section-larg-padding-T-B{
-    padding-top: pxToRem(80px);
-    padding-bottom: pxToRem(80px);
+    padding-top: pxToRem(80);
+    padding-bottom: pxToRem(80);
 }
 .section-medium-padding-T-B{
-    padding-top: pxToRem(40px);
-    padding-bottom: pxToRem(40px);
+    padding-top: pxToRem(40);
+    padding-bottom: pxToRem(40);
 }
 .section-small-padding-T-B{
-    padding-top: pxToRem(24px);
-    padding-bottom: pxToRem(24px);
+    padding-top: pxToRem(24);
+    padding-bottom: pxToRem(24);
 }
 .margin-larg-T-B{
-    margin-top: pxToRem(80px);
-    margin-bottom: pxToRem(80px);
+    margin-top: pxToRem(80);
+    margin-bottom: pxToRem(80);
 }
 .margin-medium-T-B{
-    margin-top: pxToRem(48px);
-    margin-bottom: pxToRem(48px);
+    margin-top: pxToRem(48);
+    margin-bottom: pxToRem(48);
 }
 .margin-small-T-B{
-    margin-top: pxToRem(24px);
-    margin-bottom: pxToRem(24px);
+    margin-top: pxToRem(24);
+    margin-bottom: pxToRem(24);
+}
+.w-80{
+  width: 80%;
 }

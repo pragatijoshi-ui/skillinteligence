@@ -1,0 +1,62 @@
+@import '../../App.scss';
+.Feature-section{
+    & .feature-inner-div{
+        grid-template-columns: auto auto auto auto;
+        gap: 0;
+        & .feature-section-bg{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 264.25px;
+            height: 262.5px;
+            padding: 0px 38px;
+        }
+        & .trading-section{
+            background-image: url('../../images/Features-1.png');
+            img{
+                height: 66px;
+                width: 66px;
+            }
+        }
+        & .blank-square-section, & .experties-section{
+            background-image: url('../../images/Features-2.png');
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+        & .experties-section{
+        }
+        & .brand-identity-section{
+            background-image: url('../../images/Features-6.png');
+            img{
+                height: 64px;
+                width: 64px;
+            }
+        }
+        & .education-section{
+            background-image: url('../../images/Features-3.png');
+            img{
+                height: 59px;
+                width: 59px;
+            }
+        }
+        & .Innovation-section, & .blank-circle-section{
+            background-image: url('../../images/Features-4.png');
+            img{
+                height: 73px;
+                width: 73px;
+            }
+        }
+        & .blank-circle-section{
+        }
+        & .Comprehensive-section{
+            background-image: url('../../images/Features-8.png');
+            img{
+                height: 63px;
+                width: 63px;
+            }
+        }
+    }
+    
+}

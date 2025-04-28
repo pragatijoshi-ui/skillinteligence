@@ -1,0 +1,22 @@
+@import '../../App.scss';
+.section-educator-weoffer{
+    & .slider-container{
+        & .weoffer-card{
+            height: 500px;
+            // width: 392px;
+            
+
+            padding:0px 10px;
+            & .card-inner{
+                height: 100%;
+                padding: 10px;
+                background-color: $secondry-color;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+.slick-slide > div {
+    display: flex;
+    height: 100%;
+  }

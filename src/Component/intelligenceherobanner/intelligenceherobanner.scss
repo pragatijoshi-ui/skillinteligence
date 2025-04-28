@@ -1,0 +1,40 @@
+@import '../../App.scss';
+.section-intelligenceherobanner{
+    & .intelligence-herobanner-main-div{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        & .IFT-image-div{
+            background-image: url('../../images/bg-intelligence.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: -28px;
+            height: 90vh;
+            width: 550px;
+            z-index: 1;
+        }
+        & .mask-image-div{
+            position: absolute;
+            top: 200px;
+            right: 200px;
+            z-index: 3;
+            width: 350px;
+            height: 350px;
+        }
+        & .SIW-logo-div{
+            background-color: $primary-color;
+            height: 177px;
+            width: 177px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 36px;
+            right: 120px;
+            z-index: 3;
+        }
+    }
+}

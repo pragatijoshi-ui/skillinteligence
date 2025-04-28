@@ -1,0 +1,24 @@
+@import '../../App.scss';
+.section-weoffers{
+    & .weoffer-card-container{
+        & .card-nav{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 78px;
+            & .card-list{
+                background-color: $light-color;
+                padding: 78px 36px 36px;
+                border-radius: 10px;
+                & .weoffer-card-body{
+                    & .weoffer-icon{
+                        position: absolute;
+                        margin: auto;
+                        top: -75px;
+                        left: 0;
+                        right: 0;
+                    }
+                }                    
+            }
+        }
+    }
+}
