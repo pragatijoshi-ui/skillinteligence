@@ -1,5 +1,5 @@
 import React from "react";
-import './technologywork.scss'
+// import './technologywork.scss'
 const Technology = () => {
     return (
         <>

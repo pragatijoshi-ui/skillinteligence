@@ -1,5 +1,5 @@
 import React from 'react';
-import './weoffers.scss';
+// import './weoffers.scss';
 import OurOffer from '../../images/ourOffer.png';
 const WeOffer =()=>{
     return(

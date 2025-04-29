@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.scss'; // Import the SCSS for styling
+// import './footer.scss'; // Import the SCSS for styling
 import facebook from '../../images/facebook.png'
 import Insta from '../../images/insta.png'
 import linkdin from '../../images/linkdin.png'

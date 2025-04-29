@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './heading.scss';
+// import './heading.scss';
 import EllipseBM from '../../images/Ellipse-black-medi.svg';
 import EllipseBS from '../../images/Ellipse-black-small.svg';
 import EllipseLB from '../../images/Ellipse-light-big.svg';

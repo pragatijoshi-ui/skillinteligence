@@ -1,5 +1,5 @@
 import React from 'react';
-import './intelligenceeducator.scss';
+// import './intelligenceeducator.scss';
 import Button from '../button/button';
 
 const IntelligenceEducator= () => {

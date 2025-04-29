@@ -1,5 +1,5 @@
 import React from "react";
-import "./visionmission.scss"
+// import "./visionmission.scss"
 const Visionmission =()=>{
     return(
         <section className="section-visionmission w-full">

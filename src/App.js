@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './Component/Home/index';
 import Fusionintelligence from './Component/Fusion/Fusionintelligence'
-
+import './styles/main.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App(){

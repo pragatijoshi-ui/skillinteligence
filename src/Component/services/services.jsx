@@ -137,7 +137,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './services.scss';
+// import './services.scss';
 
 const BentoContentLayout = () => {
   const [activeSection, setActiveSection] = useState(0);

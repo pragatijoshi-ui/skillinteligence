@@ -1,5 +1,5 @@
 import React from 'react';
-import './feature.scss'; // Import the SCSS file
+// import './feature.scss'; // Import the SCSS file
 
 const Card = ({ title, description, imageUrl, showTitle = true, showLink = true,showDescription= true }) => {
   return (

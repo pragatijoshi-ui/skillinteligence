@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import '../../App.scss'
-import './accordion.scss';
+// import './accordion.scss';
 import FAQImage from '../../images/FAQ-image.png'
 
 const Accordion = () => {

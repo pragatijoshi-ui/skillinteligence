@@ -1,5 +1,5 @@
 import React from 'react';
-import './ourprojects.scss';
+// import './ourprojects.scss';
 import Button from '../button/button';
 import ProjectImage from '../../images/projectImage.png'
 const OurProjects =()=>{
