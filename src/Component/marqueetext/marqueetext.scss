@@ -1,49 +1,9 @@
-@import '../../App.scss';
-// /* MarqueeText.css */
-// .section-marquee{
-//     background-color: $secondry-color;
-   
-// }
-
-// .marquee-container {
-//     width: 100%;
-//     overflow: hidden;
-//     white-space: nowrap;
-//     box-sizing: border-box;
-//     padding: 12px 0; /* optional */
-//     position: relative;
-//   }
-  
-//   .marquee-content {
-//     display: inline-block;
-//     padding-left: 100%;
-//     animation: scroll-left 10s linear infinite;
-//   }
-  
-//   @keyframes scroll-left {
-//     0% {
-//       transform: translateX(0%);
-//     }
-//     100% {
-//       transform: translateX(-100%);
-//     }
-//   }
-  
-// .back-bg-black{
-//         padding: 10px;
-//         width: 100%;  
-//         height: 50px;
-//         background-color: $black;
-        
-// }
-@import '../../App.scss';
-
 .back-bg-black {
   position: absolute;
   top: 100vh;
   left: 0%;
   width: 100%;
-  height: 50px;
+  height: pxToRem(50);
   background-color: $black;
   transform: skewY(-1deg);
   z-index: 1;
@@ -53,7 +13,7 @@
   background-color: $secondry-color;
   position: relative;
   z-index: 2;
-  padding: 12px 0;
+  padding: pxToRem(12) pxToRem(0);
   overflow: hidden;
 }
 

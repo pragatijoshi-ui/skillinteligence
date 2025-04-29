@@ -1,5 +1,5 @@
 import React from 'react';
-import './ourprojects.scss';
+// import './ourprojects.scss';
 import Button from '../button/button';
 import Project1 from '../../images/project1.png';
 import Project2 from '../../images/project2.png';

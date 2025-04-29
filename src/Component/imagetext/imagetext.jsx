@@ -1,5 +1,5 @@
 import React from 'react';
-import './imagetext.scss'
+// import './imagetext.scss'
 const AboutUs = () => {
     return (
         <>

@@ -22,7 +22,7 @@ import Service25 from '../../images/service25.png';
 import Service26 from '../../images/service26.png'; 
 
 import 'aos/dist/aos.css';
-import './services.scss';
+// import './services.scss';
 import { image } from 'framer-motion/client';
 
 const BentoContentLayout = () => {

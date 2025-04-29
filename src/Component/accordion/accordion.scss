@@ -1,9 +1,7 @@
-@import '../../App.scss';
-
 .section-accordion {
     .accordion-section{
-        padding: 20px 0px;
-        height: 520px;
+        padding: pxToRem(20) pxToRem(0);
+        height: pxToRem(520);
         overflow-y: auto;
         display: flex;
         flex-direction: column;
@@ -15,24 +13,22 @@
     .accordion {
         width: 100%;
         margin: 0 auto;
-        padding: 0px 30px;
+        padding: pxToRem(0) pxToRem(30);
         
         .accordion-item {
             border: 1px solid $light-color;
             border-radius: pxToRem(20);
-            box-shadow: 4px 4px 20px 0px #00000040;
+            box-shadow: pxToRem(4) pxToRem(4) pxToRem(20) pxToRem(0) #00000040;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            margin-bottom: 40px;
+            margin-bottom: pxToRem(40);
             color: rgba(103, 82, 98, 0.5);
             position: relative;
-            // Common header styles
             .accordion-header {
                 cursor: pointer;
-
                 .icon {
                     font-size: pxToRem(20);
                     margin-left: pxToRem(10);
-                    padding: 2px 16px;
+                    padding: pxToRem(2) pxToRem(16);
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -48,10 +44,10 @@
             // Even items (2nd, 4th, etc.) - rotate -30deg
             &:nth-child(even) {
                 transform: rotate(10deg);
-                margin-left: 50px;
+                margin-left: pxToRem(50);
             }
             &:nth-child(3) {
-                margin-left: -30px;
+                margin-left: pxToRem(-30);
             }
             &:nth-child(2) {
                 z-index: 3;
@@ -61,7 +57,7 @@
             }
             &.active {
                 transform: rotate(0deg);
-                z-index: 1; // bring it to front if needed
+                z-index: 1; 
             }
         }
     }

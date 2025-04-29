@@ -1,4 +1,3 @@
-@import '../../App.scss';
 .Feature-section{
     & .feature-inner-div{
         grid-template-columns: auto auto auto auto;
@@ -7,54 +6,51 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: 264.25px;
-            height: 262.5px;
-            padding: 0px 38px;
+            width: pxToRem(264.25);
+            height: pxToRem(262.5);
+            padding: pxToRem(0) pxToRem(38);
         }
         & .trading-section{
             background-image: url('../../images/Features-1.png');
             img{
-                height: 66px;
-                width: 66px;
+                height: pxToRem(66);
+                width: pxToRem(66);
             }
         }
         & .blank-square-section, & .experties-section{
             background-image: url('../../images/Features-2.png');
             img{
-                height: 60px;
-                width: 60px;
+                height: pxToRem(60);
+                width: pxToRem(60);
             }
-        }
-        & .experties-section{
         }
         & .brand-identity-section{
             background-image: url('../../images/Features-6.png');
             img{
-                height: 64px;
-                width: 64px;
+                height: pxToRem(64);
+                width: pxToRem(64);
             }
         }
         & .education-section{
             background-image: url('../../images/Features-3.png');
             img{
-                height: 59px;
-                width: 59px;
+                height: pxToRem(59);
+                width: pxToRem(59);
             }
         }
         & .Innovation-section, & .blank-circle-section{
             background-image: url('../../images/Features-4.png');
             img{
-                height: 73px;
-                width: 73px;
+                height: pxToRem(73);
+                width: pxToRem(73);
             }
         }
-        & .blank-circle-section{
-        }
+        
         & .Comprehensive-section{
             background-image: url('../../images/Features-8.png');
             img{
-                height: 63px;
-                width: 63px;
+                height: pxToRem(63);
+                width: pxToRem(63);
             }
         }
     }

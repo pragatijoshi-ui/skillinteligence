@@ -1,4 +1,4 @@
-@import '../../App.scss';
+// @import '../../App.scss';
 .section-intelligenceherobanner{
     & .intelligence-herobanner-main-div{
         height: 100vh;
@@ -13,27 +13,27 @@
             background-repeat: no-repeat;
             position: absolute;
             right: 0;
-            top: -28px;
+            top: pxToRem(-28);
             height: 90vh;
-            width: 550px;
+            width: pxToRem(550);
             z-index: 1;
         }
         & .mask-image-div{
             position: absolute;
-            top: 200px;
-            right: 200px;
+            top: pxToRem(200);
+            right: pxToRem(200);
             z-index: 3;
-            width: 350px;
-            height: 350px;
+            width: pxToRem(350);
+            height: pxToRem(350);
         }
         & .SIW-logo-div{
             // background-color: $primary-color;
-            height: 177px;
-            width: 177px;
+            height: pxToRem(177);
+            width: pxToRem(177);
             border-radius: 50%;
             position: absolute;
-            bottom: 36px;
-            right: 120px;
+            bottom: pxToRem(36);
+            right: pxToRem(120);
             z-index: 3;
         }
     }

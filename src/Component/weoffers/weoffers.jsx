@@ -1,5 +1,4 @@
 import React from 'react';
-import './weoffers.scss';
 import Weoffer1 from '../../images/weoffer1.png';
 import Weoffer2 from '../../images/weoffer2.png';
 import Weoffer3 from '../../images/weoffer3.png';

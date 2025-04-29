@@ -1,5 +1,5 @@
 import React from "react";
-import './technologywork.scss';
+// import './technologywork.scss';
 import Technology1 from '../../images/Technology1.png';
 import Technology2 from '../../images/Technology2.png';
 import Technology3 from '../../images/Technology3.png';

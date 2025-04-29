@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './Component/Home/index';
 import Fusionintelligence from './Component/Fusion/Fusionintelligence';
 import Educator from './Component/Educator/Educator'
-
+import './styles/main.scss'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App(){

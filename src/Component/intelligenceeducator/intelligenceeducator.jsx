@@ -1,5 +1,5 @@
 import React from 'react';
-import './intelligenceeducator.scss';
+// import './intelligenceeducator.scss';
 import Button from '../button/button';
 import Educatorcard2 from '../../images/educator-card2.png';
 import Educatorcard1 from '../../images/educator-card1.png';

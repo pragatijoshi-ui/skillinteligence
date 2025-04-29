@@ -1,36 +1,31 @@
-@import '../../App.scss';
-
 .section-ourclients {
   background-image: url('../../images/slider-bg.png');
   width: 100%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 742px;
-  padding: 60px 0px;
+  height: pxToRem(742);
+  padding: pxToRem(60) pxToRem(0);
 
   & .left-slider-container {
-    & .slick-slider {
-      
+    & .slick-slider {      
       & .slick-list {
         & .slick-track {
           display: flex;
           flex-direction: column;
           justify-content: start;
           align-items: center;
-  height: 100%;
-
-          // gap: 30px;
+          height: 100%;
           & .slick-slide {
             & .slider-inner-div {
               &::after {
                 content: '';
                 position: absolute;
-                height: 110px;
-                width: 10px;
+                height: pxToRem(110);
+                width: pxToRem(10);
                 background-color: $light-color;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
+                border-top-right-radius: pxToRem(10);
+                border-bottom-right-radius: pxToRem(10);
                 right: 30%;
               }
             }
@@ -41,7 +36,7 @@
 
               &::after {
                 background-color: $dark-color;
-                right: 55px;
+                right: pxToRem(55);
               }
             }
           }
@@ -63,17 +58,16 @@
           flex-direction: column;
           justify-content: end;
           align-items: center;
-          // gap: 30px;
           & .slick-slide {
             & .slider-inner-div {
               &::after {
                 content: '';
                 position: absolute;
-                height: 110px;
-                width: 10px;
+                height: pxToRem(110);
+                width: pxToRem(10);
                 background-color: $light-color;
-                border-top-left-radius: 10px;
-                border-bottom-left-radius: 10px;
+                border-top-left-radius: pxToRem(10);
+                border-bottom-left-radius: pxToRem(10);
                 left: 30%;
               }
 
@@ -105,18 +99,16 @@
     height: auto; // Ensure each slide's height adjusts according to content
     width: 100%;
   }
-  & .slick-track{
-  }
   & .slider-inner-div {
     background-color: $white;
-    border-radius: 10px;
-    padding: 8px 20px;
+    border-radius: pxToRem(10);
+    padding: pxToRem(8) pxToRem(20);
     margin-bottom: 30px;
-    height: 110px; 
+    height: pxToRem(110); 
     width: 70%!important;
     & .client-img-div {
-      height: 80.33px;
-      width: 80.33px;
+      height: pxToRem(80.33);
+      width: pxToRem(80.33);
       background-color: $light-color;
       border-radius: 50%;
     }

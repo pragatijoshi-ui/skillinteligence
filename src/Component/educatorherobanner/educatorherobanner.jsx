@@ -1,6 +1,4 @@
 import React from 'react';
-import './educatorherobanner.scss'
-// import '../../images/bg-IE-herobanner.png';
 import career from '../../images/hero-career.png';
 import skilled from '../../images/hero-skilled.png';
 import lifelong from '../../images/hero-lifelong.png';

@@ -1,5 +1,3 @@
-@import '../../App.scss';
-
 .section-technology {
     background-image: url('../../images/bg-technology.png');
     background-position: center;
@@ -7,17 +5,12 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
-
-    & .section-inner {}
 }
-
 
 .main {
-    width: 550px;
-    height: 550px;
+    width: pxToRem(550);
+    height: pxToRem(550);
 }
-
-.techback {}
 
 .big-circle {
     animation: Rotate 20s linear infinite;
@@ -79,9 +72,6 @@
     animation: Rotate-reverse 20s linear infinite;
     -webkit-animation: Rotate-reverse 20s linear infinite;
 }
-
-
-
 
 /* circle content */
 .circle {
@@ -176,10 +166,10 @@
     background-color: $dark-color;
     animation: circle-rotate 20s linear infinite;
     -webkit-animation: circle-rotate 22s linear infinite;
-    width: 100px; 
-    height: 100px; 
-    left: 50%; 
-    top: 50%; 
+    width: pxToRem(100);
+    height: pxToRem(100);
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -299,39 +289,39 @@
 .tooltip {
     opacity: 1;
 }
-  .tooltip-text {
+
+.tooltip-text {
     visibility: hidden;
     background-color: $dark-color;
     color: $light-color;
     text-align: center;
-    padding: 6px 10px;
-    border-radius: 6px;
+    padding: pxToRem(6) pxToRem(10);
+    border-radius: pxToRem(6);
     position: absolute;
     z-index: 10;
-    bottom: 125%; /* Adjust as needed */
+    bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap;
-    font-size: 14px;
-  }
-  
-  .tooltip-text::after {
+    font-size: pxToRem(14);
+}
+
+.tooltip-text::after {
     content: '';
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 6px;
+    border-width: pxToRem(6);
     border-style: solid;
     border-color: $dark-color transparent transparent transparent;
-  }
-  
-  .icon-block:hover {
+}
+
+.icon-block:hover {
     & .tooltip-text {
         visibility: visible;
         opacity: 1;
-      }
-  }
-  
+    }
+}
