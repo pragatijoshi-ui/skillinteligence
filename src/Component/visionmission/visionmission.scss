@@ -1,10 +1,9 @@
-@import '../../App.scss';
 .section-visionmission{
     background:url('../.././images/vision-mission.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 329px;
+    height: pxToRem(329);
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './getintouch.scss';
+// import './getintouch.scss';
 import PhoneIcon from '../../images/contact-number.svg'
 import Location from '../../images/contact-location.svg'
 import Email from '../../images/contact-email.svg'

@@ -1,17 +1,13 @@
-@import '../../App.scss';
 .section-educator-weoffer{
     & .slider-container{
         & .weoffer-card{
-            height: 500px;
-            // width: 392px;
-            
-
-            padding:0px 10px;
+            height: pxToRem(500);
+            padding:pxToRem(0) pxToRem(10);
             & .card-inner{
                 height: 100%;
-                padding: 10px;
+                padding: pxToRem(10);
                 background-color: $secondry-color;
-                border-radius: 20px;
+                border-radius: pxToRem(20);
             }
         }
     }

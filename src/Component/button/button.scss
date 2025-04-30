@@ -1,8 +1,7 @@
-@import '../../App.scss';
 .custom-button {
-    box-shadow: 4px 4px 4px 0px #00000040;
-    padding: 12px 20px;
-    border-radius: 50px;
+    box-shadow: pxToRem(4) pxToRem(4) pxToRem(4) pxToRem(0) #00000040;
+    padding: pxToRem(12) pxToRem(20);
+    border-radius: pxToRem(50);
     color: $black;
     border: none;
     width: fit-content;
@@ -18,7 +17,6 @@
     &:active {
       background-color: $secondry-color;
       color: $white;
-
     }
   }
   

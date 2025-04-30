@@ -1,5 +1,5 @@
 import React from 'react';
-import './herobanner.scss'
+// import './herobanner.scss'
 import Heroimage from '../.././images/hero-image-new.png';
 import EllipseBM from '../../images/Ellipse-black-medi.svg';
 import EllipseBS from '../../images/Ellipse-black-small.svg';

@@ -1,44 +1,44 @@
-@import '../../App.scss';
+
 .Herobanner-main-div{
     height: 100vh;
     width: 100%;
     & .top-ellipse-icons-div{
         & .top-EllipseDB{
             position: absolute;
-            right: 44px;
+            right: pxToRem(44);
             top: 0;
             z-index: 0;
-            height: 80px;
-            width: 80px;
+            height: pxToRem(80);
+            width: pxToRem(80);
         }
         & .top-EllipseBS{
             position: absolute;
-            right: 18px;
-            top: 58px;
+            right: pxToRem(18);
+            top: pxToRem(58);
         }
         & .top-EllipseLM{
             position: absolute;
-            right: 26px;
-            top: 72px;
+            right: pxToRem(26);
+            top: pxToRem(72);
         }
     }
     & .bottom-ellipse-icons-div{
         & .bottom-EllipseLB{
             position: absolute;
-            left:-64px;
-            bottom: 174px;
-            height: 80px;
-            width: 80px;
+            left:pxToRem(-64);
+            bottom: pxToRem(174);
+            height: pxToRem(80);
+            width: pxToRem(80);
         }
         & .bottom-EllipseBM{
             position: absolute;
-            left:-80px;
+            left:pxToRem(-80);
             bottom: 140px;
         }
     }
     & .SIW-office-image-div{
         z-index: 1;
-        padding: 0px 20px;
+        padding: pxToRem(0) pxToRem(20);
         img{
             height: 100%;
             width: 100%;
@@ -47,12 +47,12 @@
     }
     & .SIW-logo-div{
         background-color: $primary-color;
-        height: 177px;
-        width: 177px;
+        height: pxToRem(177);
+        width: pxToRem(177);
         border-radius: 50%;
         position: absolute;
-        bottom: 16px;
-        left: -48px;
+        bottom: pxToRem(16);
+        left: pxToRem(-48);
         z-index: 1;
     }
 }

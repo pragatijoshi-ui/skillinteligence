@@ -1,6 +1,7 @@
 import React from 'react';
-import './intelligenceherobanner.scss'
-import Maskimage from '../../images/Mask-img.png'
+// import './intelligenceherobanner.scss';
+import Maskimage from '../../images/Mask-img.png';
+import Logo from '../../images/SIWlogo.png'
 import Button from '../button/button';
 
 const Intelligenceherobanner = () => {        
@@ -24,9 +25,11 @@ const Intelligenceherobanner = () => {
                             <div className='IFT-image-div'>
                             </div>
                             <div className='mask-image-div'>
-                                <img className='h-100 w-100' src={Maskimage} alt="" />
+                                <img className='h-100 w-100' src={Maskimage} alt="Maskimage" />
                             </div>
-                            <div data-aos="zoom-in" data-aos-duration="2000" className='SIW-logo-div'></div>
+                            <div data-aos="zoom-in" data-aos-duration="2000" className='SIW-logo-div'>
+                                <img src={Logo} alt="Logo" />
+                            </div>
                         </div>
                     </div>
                 </div>

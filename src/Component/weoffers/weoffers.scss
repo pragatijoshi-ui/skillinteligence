@@ -1,21 +1,32 @@
-@import '../../App.scss';
 .section-weoffers{
     & .weoffer-card-container{
         & .card-nav{
             display: grid;
-            grid-template-columns: auto auto auto;
-            gap: 78px;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: pxToRem(78);
             & .card-list{
                 background-color: $light-color;
-                padding: 78px 36px 36px;
-                border-radius: 10px;
+                padding: pxToRem(78) pxToRem(36) pxToRem(36);
+                border-radius: pxToRem(10);
+                height: pxToRem(160);
                 & .weoffer-card-body{
-                    & .weoffer-icon{
+                    & .weoffer-icon-div{
+                        background-image: url('../../images/ourOffer.png');
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        height: pxToRem(140);
+                        width: pxToRem(174);
                         position: absolute;
                         margin: auto;
-                        top: -75px;
+                        top: pxToRem(-78);
                         left: 0;
                         right: 0;
+                        & .weoffer-icon{
+                            height: pxToRem(70);
+                            width: pxToRem(70);
+                            margin: auto;
+                        }
                     }
                 }                    
             }

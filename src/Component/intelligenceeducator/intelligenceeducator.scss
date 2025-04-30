@@ -1,39 +1,40 @@
-@import '../../App.scss';
 .section-intelligence-educator{
+    margin-top: pxToRem(200);
     & .left-side-image-section{
         & .image-section-nav{
             display: grid;
             grid-template-columns:auto auto;
-            grid-auto-rows: 175px;
-            gap: 24px;
+            grid-auto-rows: pxToRem(175);
+            gap: pxToRem(24);
             & .educator-image1{
-                width: 200px;
+                width: pxToRem(200);
                 grid-row: span 2;
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-                border-bottom-left-radius: 50px;
+                border-top-left-radius: pxToRem(50);
+                border-top-right-radius: pxToRem(50);
+                border-bottom-left-radius: pxToRem(50);
             }
             & .educator-circle{
-                width: 200px;
-                border-radius: 100px;
+                width: pxToRem(180);
+                border-radius: pxToRem(100);
             }
             & .educator-rectangle{
-                width: 200px;
-                height: 100px;
-                border-top-left-radius: 50px;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
+                width: pxToRem(200);
+                height: pxToRem(100);
+                border-top-left-radius: pxToRem(50);
+                border-top-right-radius: pxToRem(50);
+                border-bottom-right-radius: pxToRem(50);
             }
             & .educator-image2{
-                width: 200px;
+                width: pxToRem(200);
                 grid-row: span 2;
-                border-top-right-radius: 50px;
-                border-bottom-right-radius: 50px;
-                border-bottom-left-radius: 50px;
+                border-top-right-radius: pxToRem(50);
+                border-bottom-right-radius: pxToRem(50);
+                border-bottom-left-radius: pxToRem(50);
             }
         }
     }
     & .right-side-content-section{
-        padding: 0px 48px;
+        padding: pxToRem(0) pxToRem(48);
+        height: 100vh;
     }
 }
