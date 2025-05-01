@@ -1,6 +1,6 @@
 .Feature-section{
     & .feature-inner-div{
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: repeat(4, 1fr);
         gap: 0;
         & .feature-section-bg{
             background-position: center;

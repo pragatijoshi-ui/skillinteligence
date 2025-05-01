@@ -1,5 +1,4 @@
 import React from 'react';
-import './feature.scss'; 
 import Feature1 from '../../images/feature-icon1.svg';
 import Feature2 from '../../images/feature-icon2.svg';
 import Feature3 from '../../images/feature-icon3.svg';
