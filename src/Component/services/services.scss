@@ -6,17 +6,18 @@
   display: flex;
   flex-direction: column;
   scrollbar-width: none;
+  @include respond-to(mobile){
+    padding: 0;
+  }
 
   &::-webkit-scrollbar {
     display: none;
   }
   .right-section-inner {
-    min-height: 100vh; // changed from fixed height to min-height
+    min-height: 80vh;
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding: 2rem 1rem;
   }
 }
@@ -30,6 +31,10 @@
   gap: pxToRem(10);
   width: 100%;
   height: 100%;
+  @include respond-to(mobile){
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+  }
 }
 
 .bento-box {

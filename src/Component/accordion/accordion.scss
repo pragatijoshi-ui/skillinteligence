@@ -1,4 +1,10 @@
 .section-accordion {
+    .faq-image-div{
+        @include respond-to(mobile){
+            text-align: center;
+            margin: auto;
+        }
+    }
     .accordion-section{
         padding: pxToRem(20) pxToRem(0);
         height: pxToRem(520);

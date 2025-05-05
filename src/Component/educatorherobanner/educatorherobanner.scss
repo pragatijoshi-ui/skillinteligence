@@ -1,5 +1,5 @@
  .section-educator-herobanner{
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
     background-image: url('../../images/bg-IE-herobanner.png');
     background-position: center;
@@ -8,21 +8,35 @@
     z-index: 1;
     & .educator-herobanner-inner{
         height: 80vh;
+        @include respond-to(mobile){
+            height: 100vh;
+        }
     }
     & .services-cards-div{
+        position: absolute;
         top:70vh;
         z-index: 2;
         right: pxToRem(100);
+        @include respond-to(mobile){
+            position: relative;
+            top: 0;
+            right: 0;
+        }
         & .services-card-nav{
             grid-template-columns: repeat(4, 230px);
             grid-auto-rows: pxToRem(256);
             gap: pxToRem(24);
             padding-left: 0;
+            @include respond-to(mobile){
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+            }
             & .services-card-list{
                 background-color: $secondry-color;
                 border-top-left-radius: pxToRem(50);
                 border-top-right-radius: pxToRem(50);
                 border-bottom-right-radius: pxToRem(50);
+                padding: 30px;
             }
         }
     }

@@ -4,6 +4,9 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: pxToRem(78);
+            @include respond-to(mobile) {
+                grid-template-columns: 1fr;
+            }
             & .card-list{
                 background-color: $light-color;
                 padding: pxToRem(78) pxToRem(36) pxToRem(36);

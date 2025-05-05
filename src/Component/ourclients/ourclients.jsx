@@ -59,13 +59,13 @@ function OurClients() {
         autoplay: true,
         swipeToSlide: true,
         arrows: false, // hides left/right arrows
-    dots: false, 
+        dots: false, 
         afterChange: (current) => setCurrentSlide2(current)
     };
 
     return (
         <section className="section-ourclients d-flex justify-content-center align-items-center">
-            <div className="container d-flex justify-content-between align-items-center">
+            <div className="container">
                 <div className="row h-100">
                     {/* Slider 1 */}
                     <div className="col-12 col-md-6 h-100">

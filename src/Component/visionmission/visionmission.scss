@@ -7,7 +7,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond-to(mobile){
+        height: auto;
+        padding: 20px 0px;
+    }
     & .text-width{
         width: 80%;
+        @include respond-to(mobile){
+            width: 100%;
+        }
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 // import './intelligenceherobanner.scss';
 import Maskimage from '../../images/Mask-img.png';
-import Logo from '../../images/SIWlogo.png'
+import Logo from '../../images/SIWlogo.png';
 import Button from '../button/button';
 
 const Intelligenceherobanner = () => {        

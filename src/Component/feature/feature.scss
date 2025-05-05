@@ -2,12 +2,16 @@
     & .feature-inner-div{
         grid-template-columns: repeat(4, 1fr);
         gap: 0;
+        @include respond-to(mobile){
+        grid-template-columns: repeat(1, 1fr);
+
+        }
         & .feature-section-bg{
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            width: pxToRem(264.25);
-            height: pxToRem(262.5);
+            width: pxToRem(265);
+            height: pxToRem(267);
             padding: pxToRem(0) pxToRem(38);
         }
         & .trading-section{

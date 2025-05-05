@@ -19,7 +19,7 @@ const Heading = ({ heading }) => {
                 <img data-aos="zoom-in" data-aos-duration="2000" className='left-EllipseBS rotate-slow delay-2' src={EllipseBS} alt="EllipseBS" />
                 <img data-aos="zoom-in" data-aos-duration="2000" className='left-EllipseLM rotate-slow delay-3' src={EllipseLM} alt="EllipseLM" />
               </div>
-              <div data-aos="fade-up" data-aos-duration="2000" className='heading-text font-64 be-vietnam-pro-medium position-relative'>
+              <div data-aos="fade-up" data-aos-duration="2000" className='heading-text font-md-64 font-40 be-vietnam-pro-medium position-relative text-black-secondary'>
                 {heading}
               </div>
               <div className='right-ellipse-icons-div'>

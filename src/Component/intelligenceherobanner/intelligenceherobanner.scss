@@ -7,6 +7,9 @@
         flex-direction: column;
         justify-content: start;
         align-items: center;
+        @include respond-to(mobile) {
+            height: auto;
+        }
         & .IFT-image-div{
             background-image: url('../../images/bg-intelligence.png');
             background-size: cover;
@@ -17,6 +20,9 @@
             height: 90vh;
             width: pxToRem(550);
             z-index: 1;
+            @include respond-to(mobile) {
+                display: none;
+            }
         }
         & .mask-image-div{
             position: absolute;
@@ -25,9 +31,14 @@
             z-index: 3;
             width: pxToRem(350);
             height: pxToRem(350);
+            @include respond-to(mobile) {
+                position: relative;
+                top: inherit;
+                right: inherit;
+                margin: auto;
+            }
         }
         & .SIW-logo-div{
-            // background-color: $primary-color;
             height: pxToRem(177);
             width: pxToRem(177);
             border-radius: 50%;

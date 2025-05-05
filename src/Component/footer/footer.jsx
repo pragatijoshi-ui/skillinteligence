@@ -11,10 +11,10 @@ const Footer = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-12 col-md-4 d-flex justify-content-center align-items-center'>
-                        <h4 className='font-30 be-vietnam-pro-semibold text-black-secondry mb-0'>SKILL  INTELLIGENCE  WORLD</h4>                            
+                        <h4 className='font-30 be-vietnam-pro-semibold text-black-secondry mb-md-0 mb-48'>SKILL  INTELLIGENCE  WORLD</h4>                            
                     </div>
                     <div className='col-12 col-md-4 d-flex justify-content-center align-items-center'>
-                        <div className="footer-social">
+                        <div className="footer-social mb-md-0 mb-48">
                             <ul className='footer-social-ul mb-0'>                                    
                                 <li className='social-link'>
                                     <a href="#" className="social-icon"><img src={facebook} alt="facebook" /></a>
@@ -31,7 +31,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="col-12 col-md-4 d-flex justify-content-end align-items-center">
+                    <div className="col-12 col-md-4 d-flex justify-content-center jutify-content-md-end align-items-center">
                         <p className='font-30 mb-0 text-black-secondry be-vietnam-pro-regular'>&copy; 2022 , All rights reserved</p>
                     </div>
                 </div>

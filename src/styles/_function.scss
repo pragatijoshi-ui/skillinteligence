@@ -1,85 +1,229 @@
-// @import './variables';
+// // @import './variables';
 
-@function pxToRem($px, $base: 16) {
+// @function pxToRem($px, $base: 16) {
+//   @return #{$px / $base}rem;
+// }
+
+// // Define a function for line-height based on font size
+// @function lineHeight($font-size, $multiplier: 1.5) {
+//   // Multiply the font size by the multiplier first, then convert to rem
+//   @return pxToRem($font-size * $multiplier);
+// }
+
+// // Define the range of font sizes you want
+// $font-sizes: 8, 12, 14, 16, 18, 20, 24, 32,36,40,44,48,52,56,60,64,68,72;  // You can add or remove values as needed
+
+// // Generate classes for each font size in the $font-sizes list
+// @each $size in $font-sizes {
+// .font-#{$size} {
+//   font-size: pxToRem($size);
+//   line-height: lineHeight($size); // Apply line-height based on font size
+// }
+// }
+
+// // Define the range of padding and margin values you want
+// $spacing-values: 0, 4, 8, 10, 12, 14, 16, 20, 24, 32, 36, 40, 44, 48,52, 56, 62, 68, 72, 78;
+
+// // Generate padding classes (padding-top, padding-right, padding-bottom, padding-left)
+// @each $value in $spacing-values {
+// .p-#{$value} {
+//   padding: pxToRem($value);
+// }
+
+// .pt-#{$value} {
+//   padding-top: pxToRem($value);
+// }
+
+// .pr-#{$value} {
+//   padding-right: pxToRem($value);
+// }
+
+// .pb-#{$value} {
+//   padding-bottom: pxToRem($value);
+// }
+
+// .pl-#{$value} {
+//   padding-left: pxToRem($value);
+// }
+// }
+
+// // Generate margin classes (margin-top, margin-right, margin-bottom, margin-left)
+// @each $value in $spacing-values {
+// .m-#{$value} {
+//   margin: pxToRem($value);
+// }
+
+// .mt-#{$value} {
+//   margin-top: pxToRem($value);
+// }
+
+// .mr-#{$value} {
+//   margin-right: pxToRem($value);
+// }
+
+// .mb-#{$value} {
+//   margin-bottom: pxToRem($value);
+// }
+
+// .ml-#{$value} {
+//   margin-left: pxToRem($value);
+// }
+// }
+
+// // Generate background-color classes
+// @each $name, $color in $background-colors {
+// .bg-#{$name} {
+//   background-color: $color;
+// }
+// }
+
+// // Generate text color (font color) classes
+// @each $name, $color in $font-colors {
+// .text-#{$name} {
+//   color: $color;
+// }
+// }
+
+
+// ===== VARIABLES =====
+$base-font-size: 16;
+$font-sizes: 8, 12, 14, 16, 18, 20, 24, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72;
+$spacing-values: 0, 4, 8, 10, 12, 14, 16, 20, 24, 32, 36, 40, 44, 48, 52, 56, 62, 68, 72, 78;
+
+$breakpoints: (
+  sm: 0,          // base (no prefix)
+  md: 768px,      // tablets
+  xl: 1200px      // desktops
+);
+
+// ===== FUNCTIONS =====
+@function pxToRem($px, $base: $base-font-size) {
   @return #{$px / $base}rem;
 }
 
-// Define a function for line-height based on font size
 @function lineHeight($font-size, $multiplier: 1.5) {
-  // Multiply the font size by the multiplier first, then convert to rem
   @return pxToRem($font-size * $multiplier);
 }
 
-// Define the range of font sizes you want
-$font-sizes: 8, 12, 14, 16, 18, 20, 24, 32,36,40,44,48,52,56,60,64,68,72;  // You can add or remove values as needed
+// ===== MIXINS =====
+@mixin respond-to($breakpoint) {
+  $min-width: map-get($breakpoints, $breakpoint);
+  @if $min-width != 0 {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  } @else {
+    @content; // base (sm)
+  }
+}
 
-// Generate classes for each font size in the $font-sizes list
+// ===== BASE FONT-SIZE CLASSES =====
 @each $size in $font-sizes {
-.font-#{$size} {
-  font-size: pxToRem($size);
-  line-height: lineHeight($size); // Apply line-height based on font size
-}
+  .font-#{$size} {
+    font-size: pxToRem($size);
+    line-height: lineHeight($size);
+  }
 }
 
-// Define the range of padding and margin values you want
-$spacing-values: 0, 4, 8, 10, 12, 14, 16, 20, 24, 32, 36, 40, 44, 48,52, 56, 62, 68, 72, 78;
-
-// Generate padding classes (padding-top, padding-right, padding-bottom, padding-left)
+// ===== BASE PADDING CLASSES =====
 @each $value in $spacing-values {
-.p-#{$value} {
-  padding: pxToRem($value);
+  .p-#{$value}   { padding: pxToRem($value); }
+  .pt-#{$value}  { padding-top: pxToRem($value); }
+  .pr-#{$value}  { padding-right: pxToRem($value); }
+  .pb-#{$value}  { padding-bottom: pxToRem($value); }
+  .pl-#{$value}  { padding-left: pxToRem($value); }
 }
 
-.pt-#{$value} {
-  padding-top: pxToRem($value);
-}
-
-.pr-#{$value} {
-  padding-right: pxToRem($value);
-}
-
-.pb-#{$value} {
-  padding-bottom: pxToRem($value);
-}
-
-.pl-#{$value} {
-  padding-left: pxToRem($value);
-}
-}
-
-// Generate margin classes (margin-top, margin-right, margin-bottom, margin-left)
+// ===== BASE MARGIN CLASSES =====
 @each $value in $spacing-values {
-.m-#{$value} {
-  margin: pxToRem($value);
+  .m-#{$value}   { margin: pxToRem($value); }
+  .mt-#{$value}  { margin-top: pxToRem($value); }
+  .mr-#{$value}  { margin-right: pxToRem($value); }
+  .mb-#{$value}  { margin-bottom: pxToRem($value); }
+  .ml-#{$value}  { margin-left: pxToRem($value); }
 }
 
-.mt-#{$value} {
-  margin-top: pxToRem($value);
+// ===== RESPONSIVE CLASSES (md, xl) =====
+@each $breakpoint, $min in $breakpoints {
+  @if $breakpoint != sm {
+    // Font-size
+    @each $size in $font-sizes {
+      @include respond-to($breakpoint) {
+        .font-#{$breakpoint}-#{$size} {
+          font-size: pxToRem($size);
+          line-height: lineHeight($size);
+        }
+      }
+    }
+
+    // Padding
+    @each $value in $spacing-values {
+      @include respond-to($breakpoint) {
+        .p-#{$breakpoint}-#{$value}   { padding: pxToRem($value); }
+        .pt-#{$breakpoint}-#{$value}  { padding-top: pxToRem($value); }
+        .pr-#{$breakpoint}-#{$value}  { padding-right: pxToRem($value); }
+        .pb-#{$breakpoint}-#{$value}  { padding-bottom: pxToRem($value); }
+        .pl-#{$breakpoint}-#{$value}  { padding-left: pxToRem($value); }
+      }
+    }
+
+    // Margin
+    @each $value in $spacing-values {
+      @include respond-to($breakpoint) {
+        .m-#{$breakpoint}-#{$value}   { margin: pxToRem($value); }
+        .mt-#{$breakpoint}-#{$value}  { margin-top: pxToRem($value); }
+        .mr-#{$breakpoint}-#{$value}  { margin-right: pxToRem($value); }
+        .mb-#{$breakpoint}-#{$value}  { margin-bottom: pxToRem($value); }
+        .ml-#{$breakpoint}-#{$value}  { margin-left: pxToRem($value); }
+      }
+    }
+  }
+}
+// === RESPONSIVE MIXIN ===
+@mixin respond-to($breakpoint) {
+  $min-width: map-get($breakpoints, $breakpoint);
+  @if $min-width != 0 {
+    @media (min-width: $min-width) {
+      @content;
+    }
+  } @else {
+    @content; // base (sm)
+  }
 }
 
-.mr-#{$value} {
-  margin-right: pxToRem($value);
-}
-
-.mb-#{$value} {
-  margin-bottom: pxToRem($value);
-}
-
-.ml-#{$value} {
-  margin-left: pxToRem($value);
-}
-}
-
-// Generate background-color classes
-@each $name, $color in $background-colors {
-.bg-#{$name} {
-  background-color: $color;
-}
-}
-
-// Generate text color (font color) classes
+// === BASE TEXT COLOR CLASSES ===
 @each $name, $color in $font-colors {
-.text-#{$name} {
-  color: $color;
+  .text-#{$name} {
+    color: $color;
+  }
 }
+
+// === BASE BACKGROUND COLOR CLASSES ===
+@each $name, $color in $background-colors {
+  .bg-#{$name} {
+    background-color: $color;
+  }
+}
+
+// === RESPONSIVE COLOR CLASSES ===
+@each $breakpoint, $min in $breakpoints {
+  @if $breakpoint != sm {
+    // Text colors
+    @each $name, $color in $font-colors {
+      @include respond-to($breakpoint) {
+        .text-#{$breakpoint}-#{$name} {
+          color: $color;
+        }
+      }
+    }
+
+    // Background colors
+    @each $name, $color in $background-colors {
+      @include respond-to($breakpoint) {
+        .bg-#{$breakpoint}-#{$name} {
+          background-color: $color;
+        }
+      }
+    }
+  }
 }

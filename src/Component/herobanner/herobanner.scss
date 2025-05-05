@@ -2,7 +2,13 @@
 .Herobanner-main-div{
     height: 100vh;
     width: 100%;
+    @include respond-to(mobile){
+        height: auto;
+    }
     & .top-ellipse-icons-div{
+        @include respond-to(mobile){
+            display: none;
+        }
         & .top-EllipseDB{
             position: absolute;
             right: pxToRem(44);
@@ -10,43 +16,66 @@
             z-index: 0;
             height: pxToRem(80);
             width: pxToRem(80);
+            @include respond-to(mobile){
+                right: pxToRem(70);
+            }
         }
         & .top-EllipseBS{
             position: absolute;
             right: pxToRem(18);
             top: pxToRem(58);
+            @include respond-to(mobile){
+                right: pxToRem(50);
+            }
         }
         & .top-EllipseLM{
             position: absolute;
             right: pxToRem(26);
             top: pxToRem(72);
+            @include respond-to(mobile){
+                right: pxToRem(75);
+            }
         }
     }
     & .bottom-ellipse-icons-div{
+        @include respond-to(mobile){
+            display: none;
+        }
         & .bottom-EllipseLB{
             position: absolute;
             left:pxToRem(-64);
             bottom: pxToRem(174);
             height: pxToRem(80);
             width: pxToRem(80);
+            @include respond-to(mobile){
+                left: pxToRem(-4);
+
+            }
         }
         & .bottom-EllipseBM{
             position: absolute;
             left:pxToRem(-80);
             bottom: 140px;
+            @include respond-to(mobile){
+                left: pxToRem(-25);
+            }
         }
     }
     & .SIW-office-image-div{
         z-index: 1;
         padding: pxToRem(0) pxToRem(20);
+        @include respond-to(mobile){
+            text-align: center;
+        }
         img{
             height: 100%;
             width: 100%;
-        
+            @include respond-to(mobile){
+                width: 75%;
+            }
         }
     }
     & .SIW-logo-div{
-        background-color: $primary-color;
         height: pxToRem(177);
         width: pxToRem(177);
         border-radius: 50%;
@@ -54,6 +83,10 @@
         bottom: pxToRem(16);
         left: pxToRem(-48);
         z-index: 1;
+        @include respond-to(mobile){
+            left: -10px;
+            bottom: 0px;
+        }
     }
 }
 .herobanner-card-position{

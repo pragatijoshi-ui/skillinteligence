@@ -7,8 +7,13 @@
   height: pxToRem(742);
   padding: pxToRem(60) pxToRem(0);
 
+  @include respond-to(mobile) {
+    background-color: $secondry-color;
+    height: auto;
+  }
+
   & .left-slider-container {
-    & .slick-slider {      
+    & .slick-slider {
       & .slick-list {
         & .slick-track {
           display: flex;
@@ -16,6 +21,7 @@
           justify-content: start;
           align-items: center;
           height: 100%;
+
           & .slick-slide {
             & .slider-inner-div {
               &::after {
@@ -27,6 +33,10 @@
                 border-top-right-radius: pxToRem(10);
                 border-bottom-right-radius: pxToRem(10);
                 right: 30%;
+
+                @include respond-to(mobile) {
+                  right: 0%;
+                }
               }
             }
 
@@ -34,9 +44,19 @@
               margin-left: 20%;
               transition: all 0.3s ease;
 
+              @include respond-to(mobile) {
+                margin-left: 0%;
+              }
+
               &::after {
                 background-color: $dark-color;
-                right: pxToRem(55);
+                right: inherit;
+                margin-left: 66%;
+
+                @include respond-to(mobile) {
+                  margin-left: 0%;
+                  right: 0;
+                }
               }
             }
           }
@@ -47,17 +67,28 @@
   }
 
   & .right-slider-container {
-    display: flex;
+    // display: flex;
     justify-content: flex-end;
+
+    @include respond-to(mobile) {
+      justify-content: flex-start;
+    }
+
     & .slick-slider {
       width: auto;
       max-width: 100%;
+
       & .slick-list {
         & .slick-track {
           display: flex;
           flex-direction: column;
           justify-content: end;
           align-items: center;
+
+          @include respond-to(mobile) {
+            justify-content: start;
+          }
+
           & .slick-slide {
             & .slider-inner-div {
               &::after {
@@ -74,9 +105,16 @@
               &:not(.my-slick-current) {
                 margin-left: 30%;
 
+                @include respond-to(mobile) {
+                  margin-left: 0;
+                }
+
                 &::after {
                   left: 30%;
 
+                  @include respond-to(mobile) {
+                    left: 0;
+                  }
                 }
               }
             }
@@ -84,10 +122,20 @@
             & .my-slick-current {
               transition: all 0.3s ease;
               margin-left: 10%;
+
+              @include respond-to(mobile) {
+                margin-left: 0;
+              }
+
               &::after {
                 background-color: $dark-color;
-                left: 10%;
-              margin-left: 0%;
+                left: inherit;
+                margin-left: -4%;
+
+                @include respond-to(mobile) {
+                  margin-left: 0;
+                  left: 0;
+                }
               }
             }
           }
@@ -95,23 +143,31 @@
       }
     }
   }
+
   .slick-slide {
     height: auto; // Ensure each slide's height adjusts according to content
     width: 100%;
   }
+
   & .slider-inner-div {
     background-color: $white;
     border-radius: pxToRem(10);
     padding: pxToRem(8) pxToRem(20);
     margin-bottom: 30px;
-    height: pxToRem(110); 
-    width: 70%!important;
+    height: pxToRem(110);
+    width: 70% !important;
+
+    @include respond-to(mobile) {
+      width: 100% !important;
+      margin: 15px auto;
+    }
+
     & .client-img-div {
       height: pxToRem(80.33);
       width: pxToRem(80.33);
       background-color: $light-color;
       border-radius: 50%;
     }
-  }  
-  
+  }
+
 }

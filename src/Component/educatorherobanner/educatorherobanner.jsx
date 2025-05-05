@@ -17,7 +17,7 @@ const EducatorHeroBanner =()=>{
             <div className='container'>
                 <div className='row justify-content-center'>
                     <div className='col-12 col-md-10'>
-                        <div className='position-absolute services-cards-div mb-68'>
+                        <div className='services-cards-div mb-68'>
                             <ul className='d-grid services-card-nav'>
                                 <li data-aos="fade-left" data-aos-duration="1000" className='services-card-list text-center d-flex justify-content-center align-items-center'>
                                     <div className='services-card-inner'>
