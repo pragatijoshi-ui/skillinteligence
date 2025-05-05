@@ -13,11 +13,11 @@ const Intelligenceherobanner = () => {
                     <div className='row align-items-center'>
                         <div className='col-12 col-md-7'>
                             <div className='ml-68'>
-                                <p data-aos="fade-up" data-aos-duration="3000" className='text-black font-20 be-vietnam-pro-regular mb-0'>Welcom To</p>
-                                <h1 data-aos="fade-up" data-aos-duration="2000" className='font-64 be-vietnam-pro-semibold text-black-secondry mb-0'>
+                                <p data-aos="fade-up" data-aos-duration="3000" className='text-black font-md-20 font-12 be-vietnam-pro-regular'>Welcom To</p>
+                                <h1 data-aos="fade-up" data-aos-duration="2000" className='font-md-64 font-42 be-vietnam-pro-semibold text-black-secondary'>
                                 INTELLIGENCE  <br/>FUSION<br/> TECHNOLOGIES 
                                 </h1>
-                                <p data-aos="fade-up" data-aos-duration="1000" className='font-20 be-vietnam-pro-regular text-black w-80 mb-10'>We helps in providing best technology solutions tailored to your business needs. From software development and cybersecurity to cloud services and IT consultancy. We ensure you stay ahead in this Tech-leading world.</p>
+                                <p data-aos="fade-up" data-aos-duration="1000" className='font-md-20 font-12 be-vietnam-pro-regular text-black w-80 mb-10'>We helps in providing best technology solutions tailored to your business needs. From software development and cybersecurity to cloud services and IT consultancy. We ensure you stay ahead in this Tech-leading world.</p>
                                 <Button label="Visit Site"/>
                             </div>
                         </div>

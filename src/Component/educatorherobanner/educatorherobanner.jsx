@@ -9,8 +9,8 @@ const EducatorHeroBanner =()=>{
             <div className='container'>
                 <div className='row d-flex justify-content-center align-items-center educator-herobanner-inner'>
                     <div className='col-12 col-md-10'>
-                        <h1 data-aos="fade-up" data-aos-duration="2000" className='text-white font-64 be-vietnam-pro-semibold'>INTELLIGENCE EDUCATOR</h1>
-                        <p data-aos="fade-up" data-aos-duration="1000" className='font-20 be-vietnam-pro-regular text-white'>We aim to Craft A person in such a way that he/ she shall be able to master the desired skills. Our courses involve outlining key topics, skills, and tools that learners will need to master.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="2000" className='text-white font-md-64 font-42 be-vietnam-pro-semibold'>INTELLIGENCE EDUCATOR</h1>
+                        <p data-aos="fade-up" data-aos-duration="1000" className='font-md-20 font-12 be-vietnam-pro-regular text-white'>We aim to Craft A person in such a way that he/ she shall be able to master the desired skills. Our courses involve outlining key topics, skills, and tools that learners will need to master.</p>
                     </div>
                 </div>
             </div>

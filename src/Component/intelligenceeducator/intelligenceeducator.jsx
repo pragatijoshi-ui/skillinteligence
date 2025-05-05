@@ -1,5 +1,4 @@
 import React from 'react';
-// import './intelligenceeducator.scss';
 import Button from '../button/button';
 import Educatorcard2 from '../../images/educator-card2.png';
 import Educatorcard1 from '../../images/educator-card1.png';
@@ -26,7 +25,7 @@ const IntelligenceEducator= () => {
                         <div className='right-side-content-section d-flex justify-content-start align-items-center text-start'>
                             <div className='d-block'>
                                 <span data-aos="fade-left" data-aos-duration="2000" className='font-20 be-vietnam-pro-regular text-black'>Welcome To</span>
-                                <h2 data-aos="fade-left" data-aos-duration="2000" className='text-black-secondry font-64 be-vietnam-pro-semibold mb-24'>INTELLIGENCE <br/>EDUCATOR</h2>
+                                <h2 data-aos="fade-left" data-aos-duration="2000" className='text-black-secondry font-md-64 font-40 be-vietnam-pro-semibold mb-24'>INTELLIGENCE <br/>EDUCATOR</h2>
                                 <p data-aos="fade-left" data-aos-duration="2000" className='font-20 text-black be-vietnam-pro-regular mb-48'>If you are looking for a way to expand your knowledge in the field of IT, Intelligence Educators is here to support you every step of the way..</p>
                                 <Button label="Visit Site"/>
                             </div>

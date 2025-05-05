@@ -6,16 +6,22 @@
             grid-template-columns:auto auto;
             grid-auto-rows: pxToRem(175);
             gap: pxToRem(24);
+            @include respond-to(mobile) {
+            }
             & .educator-image1{
                 width: pxToRem(200);
                 grid-row: span 2;
                 border-top-left-radius: pxToRem(50);
                 border-top-right-radius: pxToRem(50);
                 border-bottom-left-radius: pxToRem(50);
+            @include respond-to(mobile) {
+            }
             }
             & .educator-circle{
                 width: pxToRem(180);
                 border-radius: pxToRem(100);
+                @include respond-to(mobile) {
+                }
             }
             & .educator-rectangle{
                 width: pxToRem(200);
@@ -23,6 +29,8 @@
                 border-top-left-radius: pxToRem(50);
                 border-top-right-radius: pxToRem(50);
                 border-bottom-right-radius: pxToRem(50);
+                @include respond-to(mobile) {
+                }
             }
             & .educator-image2{
                 width: pxToRem(200);
@@ -30,6 +38,8 @@
                 border-top-right-radius: pxToRem(50);
                 border-bottom-right-radius: pxToRem(50);
                 border-bottom-left-radius: pxToRem(50);
+                @include respond-to(mobile) {
+                }
             }
         }
     }
