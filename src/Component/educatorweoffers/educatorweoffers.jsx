@@ -10,7 +10,19 @@ const Educatorweoffers = () => {
         // centerPadding: '20px',
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 768, // Below this width
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true,
+                    autoplay: true
+                }
+            }
+        ]
     };
     return (
         <section className='section-educator-weoffer margin-larg-T-B'>
